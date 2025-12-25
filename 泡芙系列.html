@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>旅禾烘焙 - 泡芙系列</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2930d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221b10",
+                        "warm-grey": "#8a7960",
+                        "deep-brown": "#4a3b2a",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "1.5rem", "xl": "2rem", "2xl": "2.5rem", "full": "9999px" },
+                    boxShadow: {
+                        "soft": "0 4px 20px -2px rgba(242, 147, 13, 0.1)",
+                        "card": "0 2px 8px -1px rgba(0, 0, 0, 0.05)"
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-deep-brown dark:text-[#e8e6e3]">
+    <div
+        class="relative flex h-full min-h-screen w-full flex-col max-w-md mx-auto overflow-x-hidden shadow-2xl bg-white dark:bg-background-dark">
+        <header
+            class="sticky top-0 z-50 flex items-center bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm p-4 pb-2 justify-between border-b border-warm-grey/10">
+            <button
+                class="text-deep-brown dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                onclick="history.back()">
+                <span class="material-symbols-outlined text-[24px]">arrow_back</span>
+            </button>
+            <h2
+                class="text-deep-brown dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
+                商品總覽</h2>
+            <div class="flex w-10 items-center justify-end">
+                <button
+                    class="relative flex size-10 cursor-pointer items-center justify-center rounded-full text-deep-brown dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+                    <span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+                    <span
+                        class="absolute top-1.5 right-1.5 flex h-2 w-2 items-center justify-center rounded-full bg-primary ring-2 ring-background-light dark:ring-background-dark"></span>
+                </button>
+            </div>
+        </header>
+        <div class="sticky top-[60px] z-40 bg-background-light dark:bg-background-dark pt-2 pb-4">
+            <div class="flex gap-3 px-4 overflow-x-auto no-scrollbar items-center">
+                <button
+                    class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-5 shadow-soft transition-transform active:scale-95">
+                    <p class="text-sm font-semibold leading-normal">全部</p>
+                </button>
+                <button
+                    class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-white/5 border border-warm-grey/10 px-5 transition-transform active:scale-95">
+                    <p class="text-warm-grey dark:text-gray-300 text-sm font-medium leading-normal">經典原味</p>
+                </button>
+                <button
+                    class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-white/5 border border-warm-grey/10 px-5 transition-transform active:scale-95">
+                    <p class="text-warm-grey dark:text-gray-300 text-sm font-medium leading-normal">季節限定</p>
+                </button>
+                <button
+                    class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-white/5 border border-warm-grey/10 px-5 transition-transform active:scale-95">
+                    <p class="text-warm-grey dark:text-gray-300 text-sm font-medium leading-normal">禮盒組</p>
+                </button>
+                <button
+                    class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-white/5 border border-warm-grey/10 px-5 transition-transform active:scale-95">
+                    <p class="text-warm-grey dark:text-gray-300 text-sm font-medium leading-normal">熱銷排行</p>
+                </button>
+            </div>
+        </div>
+        <main class="flex-1 px-4 pb-24">
+            <div class="flex items-center justify-between mb-4 px-1">
+                <span class="text-xs font-medium text-warm-grey dark:text-gray-400">共 12 項商品</span>
+                <button class="flex items-center gap-1 text-xs font-medium text-warm-grey dark:text-gray-400">
+                    排序 <span class="material-symbols-outlined text-[16px]">sort</span>
+                </button>
+            </div>
+            <div class="grid grid-cols-2 gap-x-4 gap-y-8">
+                <div class="group flex flex-col gap-3">
+                    <div class="relative w-full aspect-[4/5] rounded-[20px] overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-card cursor-pointer"
+                        onclick="location.href='商品詳情.html'">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="金黃酥脆的泡芙，撒上糖粉"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBiF9rcolZ4fBDYg9U9be9wQMfO7dElv_Z-U4WZAwFjO-1-c2PdmPmmKy1FjHMrzIoyk8hup-sg8M3E_bjIMI54QxA0QCWiDSspcBt0Ci4ru40Nr_-GApULatAUn6wyoVfUGXeVJ3GtPUT-TE1N4hOqAy0Agk5vJjoxlub2GNijyl5ssiyRfEdW1mQKQNnmbkFXZaflmnFrdxzLmTM-gsh0QBvf9KGVAYvPbZjPSP2fy4G3OIBK6r_1moRIROgdKEgeJXk2bODWxUY");'>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-primary/90 backdrop-blur-[2px] px-2.5 py-1 rounded-full">
+                            <p class="text-white text-[10px] font-bold tracking-wide uppercase">熱銷</p>
+                        </div>
+                        <button
+                            class="absolute bottom-3 right-3 size-10 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md flex items-center justify-center text-deep-brown dark:text-white shadow-lg active:scale-90 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px] font-semibold">add</span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-deep-brown dark:text-white text-base font-bold leading-tight">北海道生乳泡芙</h3>
+                        </div>
+                        <p class="text-warm-grey dark:text-gray-400 text-xs font-normal mb-1.5 line-clamp-1">
+                            酥脆外皮，濃郁北海道鮮奶內餡</p>
+                        <p class="text-primary text-base font-bold">NT$ 65</p>
+                    </div>
+                </div>
+                <div class="group flex flex-col gap-3">
+                    <div
+                        class="relative w-full aspect-[4/5] rounded-[20px] overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-card">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="淋上巧克力醬的黑巧克力泡芙"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4dCtVg53RaPNBq23kKs06ZH16n4zT8oqgaMYwZvUiAr_7J2s0m1k1ozA8Ii7b_JiE6mguFK6B9Ds4Lmi1XF3J6karGDrMdeJd3tN7F-n8JU_4m51nG0YuV1q42YuMyuYcu970PntKrnqjsAxT5VNZbre0vnJUoUftz7E0Xc8kBAuRtiGfCpiI0nB76-yqVCA3kkKMJ6YjE2TcjpWpF07D2Asv3ywrw2gr973uOIUoAul6t4gxZQjqzG_X9g1PjAdwipKEvduMY2CJ");'>
+                        </div>
+                        <button
+                            class="absolute bottom-3 right-3 size-10 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md flex items-center justify-center text-deep-brown dark:text-white shadow-lg active:scale-90 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px] font-semibold">add</span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-deep-brown dark:text-white text-base font-bold leading-tight">濃情巧克力泡芙</h3>
+                        </div>
+                        <p class="text-warm-grey dark:text-gray-400 text-xs font-normal mb-1.5 line-clamp-1">72%
+                            比利時苦甜巧克力使用</p>
+                        <p class="text-primary text-base font-bold">NT$ 70</p>
+                    </div>
+                </div>
+                <div class="group flex flex-col gap-3">
+                    <div
+                        class="relative w-full aspect-[4/5] rounded-[20px] overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-card">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="搭配粉紅內餡的新鮮草莓泡芙"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBw3he7qlhSzyscQnba9ykJcPYiSaFaUz3YCwLRHAFky7OjwYDtr1I48_PjLrZKF7X79FTajR2xp220pW5ddM0bWUHGvuM0ZHsTtfs2Wr8kP6VfsIa94qMH2ahpDUwhegQ1FI3Z4bAn_DGuTJAd6L0ajE-XXwUfuaXUDpCeuNse09Klrz0wIf3qXXOJSg4-jYjLE67kgO57oi_TWGGos4eUiTBFqRlMessMomPaOb9ht-HgHHZgTRzSPF-Vj0EeDXWLWzDBm2trk7vq");'>
+                        </div>
+                        <div class="absolute top-3 left-3 bg-red-500/90 backdrop-blur-[2px] px-2.5 py-1 rounded-full">
+                            <p class="text-white text-[10px] font-bold tracking-wide uppercase">季節限定</p>
+                        </div>
+                        <button
+                            class="absolute bottom-3 right-3 size-10 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md flex items-center justify-center text-deep-brown dark:text-white shadow-lg active:scale-90 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px] font-semibold">add</span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-deep-brown dark:text-white text-base font-bold leading-tight">草莓雙餡泡芙</h3>
+                        </div>
+                        <p class="text-warm-grey dark:text-gray-400 text-xs font-normal mb-1.5 line-clamp-1">
+                            大湖草莓與香草卡士達完美結合</p>
+                        <p class="text-primary text-base font-bold">NT$ 85</p>
+                    </div>
+                </div>
+                <div class="group flex flex-col gap-3">
+                    <div
+                        class="relative w-full aspect-[4/5] rounded-[20px] overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-card">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="撒上綠色抹茶粉的宇治抹茶泡芙"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_QNyU3t7ewUp3gf5M1c_BO7GH-tx40980bzUtz_sZ14kETNvBWeobetuxsIu6mhsS8v16PIHABcqbyj1Y7o8qGqNsF5EMqIkb4woaAtIXKz2OcSzz_sZq90JlYVvK5aqfxwvBexeA6574aKTC89_mqnEy_eyjcFRpK7cIUQNBqSC1wtSo3lgDEAsgPQEz01TX452Ld6wqL4DwPxf4Qz9clGsgVWhFjsGi7G3OkqmYIuJY4IiwIlm8yfBTAFz_X6RaFwpsmDuEn_rO");'>
+                        </div>
+                        <button
+                            class="absolute bottom-3 right-3 size-10 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md flex items-center justify-center text-deep-brown dark:text-white shadow-lg active:scale-90 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px] font-semibold">add</span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-deep-brown dark:text-white text-base font-bold leading-tight">宇治抹茶泡芙</h3>
+                        </div>
+                        <p class="text-warm-grey dark:text-gray-400 text-xs font-normal mb-1.5 line-clamp-1">小山園抹茶粉，微苦回甘
+                        </p>
+                        <p class="text-primary text-base font-bold">NT$ 75</p>
+                    </div>
+                </div>
+                <div class="group flex flex-col gap-3">
+                    <div
+                        class="relative w-full aspect-[4/5] rounded-[20px] overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-card">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="包裝精美的綜合口味泡芙禮盒"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCzQk5rxSXtCz_T6YCvYYv8c-CDmvpEOxs5J1F1zv8ADftqdKa8umoug9QrlEJqhxSwp-nSB3YarBT9buzavhAeiGpTRrLONQwxa-SztoxxeV0bHU2D_NDsrFhc46-zacP7oCaF2MU049psTtB0OXKZAn5ezUK0hEHVxiJbizUpHCiZ22B_2Ps8gcFAEFG3dvcI6NXZgthh5WY_HK9JdOaZ3zAnycNNCq11yXtzQke8OCcsIMMmYfwJvy9Ue-YEkwPNQEOfXfsyDXVy");'>
+                        </div>
+                        <div
+                            class="absolute top-3 left-3 bg-deep-brown/90 backdrop-blur-[2px] px-2.5 py-1 rounded-full">
+                            <p class="text-white text-[10px] font-bold tracking-wide uppercase">精選禮盒</p>
+                        </div>
+                        <button
+                            class="absolute bottom-3 right-3 size-10 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md flex items-center justify-center text-deep-brown dark:text-white shadow-lg active:scale-90 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px] font-semibold">add</span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-deep-brown dark:text-white text-base font-bold leading-tight">經典泡芙禮盒</h3>
+                        </div>
+                        <p class="text-warm-grey dark:text-gray-400 text-xs font-normal mb-1.5 line-clamp-1">
+                            送禮首選，內含6入綜合口味</p>
+                        <p class="text-primary text-base font-bold">NT$ 350</p>
+                    </div>
+                </div>
+                <div class="group flex flex-col gap-3">
+                    <div
+                        class="relative w-full aspect-[4/5] rounded-[20px] overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-card">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                            data-alt="頂部有杏仁脆片的香草泡芙"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5ajKSclGDpGsTzWnNyRMvYgf-KKeW-VIY1R-MKWFUaJ-0MQKa8tOojsO6HBh4SbiRVci4Ds0YRRnpaptkEIaPU87IlDM1LiSek7ztA1Z6GHSTAm3PQUAW_gV0DglMODR2s-F_IbD_QEwAKcHklIMSZWxAB_GUQ5iBUHjO72A5bqP9x4y3bdaLfrtqJpHW7Sy30NYpBLL1ziMkjJHFH7ixlDYaXZ0Ic0Q24NsndMinw0Rz2_aJ5bK1hmnVCAiI_xbgnIEHG2cRuar-");'>
+                        </div>
+                        <button
+                            class="absolute bottom-3 right-3 size-10 rounded-full bg-white/90 dark:bg-black/60 backdrop-blur-md flex items-center justify-center text-deep-brown dark:text-white shadow-lg active:scale-90 transition-all hover:bg-primary hover:text-white">
+                            <span class="material-symbols-outlined text-[20px] font-semibold">add</span>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="text-deep-brown dark:text-white text-base font-bold leading-tight">杏仁酥菠蘿</h3>
+                        </div>
+                        <p class="text-warm-grey dark:text-gray-400 text-xs font-normal mb-1.5 line-clamp-1">酥脆口感層次豐富
+                        </p>
+                        <p class="text-primary text-base font-bold">NT$ 60</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <nav
+            class="fixed bottom-0 left-0 z-50 w-full border-t border-black/5 bg-white pb-6 pt-3 dark:border-white/5 dark:bg-background-dark">
+            <div class="flex items-center justify-around px-2">
+                <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                    href="index.html">
+                    <span class="material-symbols-outlined text-[24px]">home</span>
+                    <span class="text-[10px] font-medium">首頁</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 p-2 text-primary" href="泡芙系列.html">
+                    <span class="material-symbols-outlined fill-current text-[24px]"
+                        style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+                    <span class="text-[10px] font-medium">商品</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                    href="購物車.html">
+                    <span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+                    <span class="text-[10px] font-medium">購物車</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                    href="會員中心.html">
+                    <span class="material-symbols-outlined text-[24px]">person</span>
+                    <span class="text-[10px] font-medium">會員</span>
+                </a>
+            </div>
+        </nav>
+        <div class="h-[80px]"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>旅禾烘焙 - 首頁</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2930d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221b10",
+                        "text-primary": "#181511",
+                        "text-secondary": "#8a7960",
+                        "purple-halloween": "#6b21a8",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "system-ui", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "2xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pb-24">
+        <header
+            class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md transition-all duration-300">
+            <div class="flex items-center justify-between px-5 py-4">
+                <button
+                    class="flex items-center justify-center p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+                    <span class="material-symbols-outlined text-text-primary text-[28px]">menu</span>
+                </button>
+                <div class="flex flex-col items-center opacity-100 transition-opacity">
+                    <h1 class="text-xl font-bold tracking-tight text-text-primary">旅禾烘焙</h1>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-text-secondary font-medium">純粹的初衷</span>
+                </div>
+                <button
+                    class="flex items-center justify-center p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors relative">
+                    <span class="material-symbols-outlined text-text-primary text-[24px]">shopping_bag</span>
+                    <span
+                        class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-primary ring-2 ring-background-light dark:ring-background-dark"></span>
+                </button>
+            </div>
+        </header>
+        <main class="flex flex-col gap-6 px-4 pt-2">
+            <section class="w-full">
+                <div
+                    class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-halloween via-purple-700 to-primary shadow-lg ring-1 ring-black/5">
+                    <div class="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
+                    <div class="absolute -left-10 bottom-0 h-40 w-40 rounded-full bg-primary/20 blur-2xl"></div>
+                    <div class="relative z-10 flex flex-col p-6 text-white">
+                        <div class="mb-4 flex items-center gap-2">
+                            <span
+                                class="rounded-full bg-white/20 px-3 py-1 text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm">期間限定</span>
+                            <span class="material-symbols-outlined text-sm animate-bounce">local_fire_department</span>
+                        </div>
+                        <h2 class="mb-2 text-3xl font-bold leading-none tracking-tight">不給糖<br />就搗蛋</h2>
+                        <p class="mb-6 max-w-[200px] text-sm font-medium text-white/90">快來搶購搞怪甜點，慢了就被鬼抓走囉！</p>
+                        <div class="flex items-end justify-between">
+                            <button
+                                class="group flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-purple-900 shadow-md transition-transform active:scale-95">
+                                <span>查看萬聖節優惠</span>
+                                <span
+                                    class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </button>
+                            <div class="absolute bottom-0 right-0 h-32 w-32 translate-y-2 translate-x-2">
+                                <div class="h-full w-full bg-contain bg-center bg-no-repeat drop-shadow-xl"
+                                    data-alt="Cute 3D illustration of a ghost holding a pumpkin basket with candy"
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCu8hMtDWej2qI499S2uYlgZAlEV3cTv_iv99RThbOliKcs3F6iOZPp38wqLWbtyZv0d3Lg05JClZbKYcnJD3-V8FP5XNXaAU_Va8v-qky9RUbgJigKtKZ-naxwMC_QpyQNmNCU96ytPDKC4nQb7uQD7nOrNB-uak8cTqfs8UWYitjx6EvvVs6qD0bU3Tf8A0k343JQQAiDbZ8I2QoI3npZCjSnMNYTxEVvMc9l1DkxlCOEEaMVQY8r3p-qeYy0JCSFJuQSSJOr21uQ');">
+                                </div>
+                                <div class="absolute bottom-4 right-4 text-4xl">👻</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="flex items-center justify-between mb-3 px-1">
+                    <h3 class="text-lg font-bold text-text-primary">探索美味</h3>
+                    <a class="text-xs font-bold text-text-secondary hover:text-primary transition-colors"
+                        href="#">查看全部</a>
+                </div>
+                <div class="flex w-full snap-x gap-4 overflow-x-auto no-scrollbar pb-2">
+                    <div class="flex shrink-0 snap-start flex-col items-center gap-2 cursor-pointer"
+                        onclick="location.href='泡芙系列.html'">
+                        <div
+                            class="relative h-[72px] w-[72px] overflow-hidden rounded-full border-2 border-primary/20 p-1">
+                            <div class="h-full w-full rounded-full bg-cover bg-center"
+                                data-alt="Close up of a golden crispy cream puff"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA71zGQMQAZQAHFgTpmT4LTA7aXeD2UDxIZKFdGYxrANpledA5lU-SQyTquoJLH8n6n3Tz87BKZ_5U4EuPlzkVPhUmf_pH2BJzPh6yw7H2Zz0dXCX_BDXYzZAOTKgt1I743ilyNaEljKHh1W7gigjYPHJ-R2XsPLK5T9MjOYNJlCJmW4kso-EDBRIq8hqvnbzSMbI7Ltp4mF3_Kp-ac5J09vDsAc3bsJDhUXD1EVxJBnilGsP1ZC-GVp2Hbm1lmlPkAbBDgigfQsKU4');">
+                            </div>
+                        </div>
+                        <span class="text-xs font-medium text-text-primary">泡芙</span>
+                    </div>
+                    <div class="flex shrink-0 snap-start flex-col items-center gap-2">
+                        <div
+                            class="relative h-[72px] w-[72px] overflow-hidden rounded-full border-2 border-transparent p-1 ring-1 ring-black/5 bg-white">
+                            <div class="h-full w-full rounded-full bg-cover bg-center"
+                                data-alt="Artisan sourdough bread loaf texture"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDU37PqQFwNg26u1deQybUK03fCVUwmJwLeJI5gHqqb3wJ3AHhHMqDMbnOrqDqSOnzCfw9BwVuceuPRoFqkwxeLn190e5zMhfoiJJaxftccJuYKl8YecMgh1KCdW1He17vl-6H_nODfOgJABvd_F0o3PTHLcH--ighyq-UeT-i10ItB5EucaML8B3ygY7mU1oXSxsoHVtEVw0tfIIg0EABpc5vac77SvtpguWb76PJE-b9k0qUN-hgZQs64QNRJyEiET-Xzfofso17P');">
+                            </div>
+                        </div>
+                        <span class="text-xs font-medium text-text-primary">麵包</span>
+                    </div>
+                    <div class="flex shrink-0 snap-start flex-col items-center gap-2">
+                        <div
+                            class="relative h-[72px] w-[72px] overflow-hidden rounded-full border-2 border-transparent p-1 ring-1 ring-black/5 bg-white">
+                            <div class="h-full w-full rounded-full bg-cover bg-center"
+                                data-alt="Slice of strawberry shortcake with fresh cream"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBfNrG1SoGIYWBY3l6PlG2scY2ROs3oGMdFGyU4nNtMxfJGkxonP0HQ8JlLM6IbIrZLPt41AqWXqtxc3JVh6oOYQ7PLCzfBGZ0GnO99qyKIRWLIWVyY8X-SoJD0Jhauv3hQEA1UKQeCKbrlV78WbqhkvDhYVItiXYPVI4rdFUk-p7K9hZHhm_xwO-0lXS2ghcKvfEPqN0HVEBMOLO6GaEiAJC2exJ1HzUKITGwCHKc_O3AJxvoJlAeuFh2MU05fEdpIyxmlwCc74DAC');">
+                            </div>
+                        </div>
+                        <span class="text-xs font-medium text-text-primary">蛋糕</span>
+                    </div>
+                    <div class="flex shrink-0 snap-start flex-col items-center gap-2">
+                        <div
+                            class="relative h-[72px] w-[72px] overflow-hidden rounded-full border-2 border-transparent p-1 ring-1 ring-black/5 bg-white">
+                            <div class="h-full w-full rounded-full bg-cover bg-center"
+                                data-alt="Colorful french macarons arranged in a circle"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAp_c0G6X6DLHkezZOIfXXLk-voGrRD89p5dSkpcMUWd9mJ6S-Hbj3I6tNSDGCrDF1loiFLK37Wodlq1GWeI8BeKbK3MymFep1QNuXml0qjs_qWrTb6JOGEfrmN7A14qagh48GJGFuSf-oTw_qm4szZYNy-HEp9qCmGva5HXwmtLaUawY1lc5pkbv-lcgK6baBpX3nC_ZrjKGpqtbBIGzqS114BXaO58ykArPW_jykNKX-GWQ_L1WVKKcP4t-wJx_m3UOV5ZidWaMVL');">
+                            </div>
+                        </div>
+                        <span class="text-xs font-medium text-text-primary">馬卡龍</span>
+                    </div>
+                    <div class="flex shrink-0 snap-start flex-col items-center gap-2">
+                        <div
+                            class="relative h-[72px] w-[72px] overflow-hidden rounded-full border-2 border-transparent p-1 ring-1 ring-black/5 bg-white">
+                            <div class="h-full w-full rounded-full bg-cover bg-center"
+                                data-alt="Freshly brewed coffee latte art"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBv0u0v0MTQI51d26zUO1kvOiRl7LqBMwS21KvfnVz2mSnNxeqAXk5p6tKAH47NImcTy3jzEzOTzJE7gKxtZXWbkaRo6SzHCL8l27HhjXIPRet_1PfeGMRpOU69hfWw9D_j7CsakLTuVzLZGnKwpj0aIS0qjU09m-ni_z18NeQ4hSap5Joypasiah442BHAW9b8JckdZMsNGaRlP2Qu0oDtAKU4e85K79ObniBEu_t3Og-muw1rVfuzzL2CYLatO7geMtVbqD6jPTaE');">
+                            </div>
+                        </div>
+                        <span class="text-xs font-medium text-text-primary">咖啡</span>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-2">
+                <div
+                    class="flex flex-col gap-4 rounded-xl bg-white p-4 shadow-[0_2px_8px_rgba(0,0,0,0.04)] dark:bg-neutral-800">
+                    <div class="relative aspect-video w-full overflow-hidden rounded-lg">
+                        <div class="h-full w-full bg-cover bg-center transition-transform duration-700 hover:scale-105"
+                            data-alt="A lifestyle shot of a picnic with various baked goods on a wooden board"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7vMWQyUrL26R9pwyUGJvTdeMJ2ff6JST9Jnsz-xMRRBraY9rYqm71VOG_GRV1UnHBF6d1Ko_FIIDITOIPnNnhlrGDz-G76X3BBEia2oDpoYtz1-_YdFsIeSrweslaGQeDy5tKrxzXER6Hg6xKLN8U6i2pKxpFSm3P653nROogGIovt_kYW7hdCqiq5l8GoTRrGvu4ySkp2kmXMRRa8gdeKLH6nO3WEBr6hXeSnkZPPKXAV1IuxNvP9nvbUFFLiINNj400XoWFi_ux');">
+                        </div>
+                        <div
+                            class="absolute top-3 left-3 rounded-full bg-background-light/90 px-3 py-1 text-xs font-bold text-text-primary backdrop-blur-md">
+                            人氣熱銷
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-bold text-text-primary">招牌卡士達泡芙</h3>
+                                <p class="text-sm text-text-secondary">酥脆菠蘿外皮，搭配香草籽卡士達內餡。</p>
+                            </div>
+                            <span class="text-lg font-bold text-primary">NT$ 45</span>
+                        </div>
+                        <button
+                            class="mt-2 w-full rounded-full bg-primary/10 py-3 text-sm font-bold text-primary transition-colors hover:bg-primary hover:text-white">
+                            加入購物車
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-2">
+                <h2 class="mb-4 px-1 text-[22px] font-bold tracking-tight text-text-primary">純粹的初衷</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="group flex flex-col gap-3 rounded-xl bg-transparent transition-all">
+                        <div class="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-gray-100">
+                            <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Vertical shot of artisan sourdough bread slices"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1RwA_Dyz9Vyf3OqZW5ThH2FgPPpm6pLOapguACIvLI0sNVeWCgdsoXwED2CR3NlCpGTSGm_d1zXp1-ebknalZFOtPFIkN1uJjYFdbrpikVkPWi2otc_aoIO1hwQqsWHgyDatRpF7rmQElkGXrFzPpnD4Nswv0s6zeGjbD02CN_A605wv6p6uSimbtqmfRjIKti3JbKszGAUVL5YHBwkK9t2yCQedjlCu4YFyIkY5IMSKnShExfVj1A383tUn1bXI_hog5X0PHjGQf');">
+                            </div>
+                            <button
+                                class="absolute bottom-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-text-primary shadow-sm backdrop-blur-sm transition-transform active:scale-90">
+                                <span class="material-symbols-outlined text-[18px]">add</span>
+                            </button>
+                        </div>
+                        <div class="flex flex-col px-1">
+                            <h4 class="text-base font-bold text-text-primary">鄉村酸種麵包</h4>
+                            <p class="text-xs text-text-secondary">天然酵母，48小時低溫發酵。</p>
+                            <span class="mt-1 text-sm font-bold text-text-primary">NT$ 120</span>
+                        </div>
+                    </div>
+                    <div class="group flex flex-col gap-3 rounded-xl bg-transparent transition-all">
+                        <div class="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-gray-100">
+                            <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                data-alt="Delicate strawberry mousse cake slice"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCI8WPFFS0BIRQHzY9SvzAaDCl2NjKsxI-AF_6fmXejKo-_hVG4ovUyM-ToBPnZGpURdEbjniWEQ5YZZzgAApMaqa4NajZvw_ySdOHHgYZaPc9yG_MEUL3MFw6St_IlB1BXed1NjdGaTbYXPH-kgCLB9zQnHNPykkGSoOrH9hDI5YYeRpwFZDugj4SODxgnjTV-h64iA-D_wMrckQK6GABxoAA8hFspGey2gemfFuOTtJ2pBSlTtl-Y440cgNPBSBvpjw2iOhrWBAtX');">
+                            </div>
+                            <button
+                                class="absolute bottom-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-text-primary shadow-sm backdrop-blur-sm transition-transform active:scale-90">
+                                <span class="material-symbols-outlined text-[18px]">add</span>
+                            </button>
+                        </div>
+                        <div class="flex flex-col px-1">
+                            <h4 class="text-base font-bold text-text-primary">野莓慕斯蛋糕</h4>
+                            <p class="text-xs text-text-secondary">口感輕盈，酸甜莓果香氣。</p>
+                            <span class="mt-1 text-sm font-bold text-text-primary">NT$ 95</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="h-10"></div>
+        </main>
+        <nav
+            class="fixed bottom-0 left-0 z-50 w-full border-t border-black/5 bg-white pb-6 pt-3 dark:border-white/5 dark:bg-background-dark">
+            <div class="flex items-center justify-around px-2">
+                <a class="flex flex-col items-center gap-1 p-2 text-primary" href="index.html">
+                    <span class="material-symbols-outlined fill-current text-[24px]"
+                        style="font-variation-settings: 'FILL' 1;">home</span>
+                    <span class="text-[10px] font-medium">首頁</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                    href="泡芙系列.html">
+                    <span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+                    <span class="text-[10px] font-medium">商品</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                    href="購物車.html">
+                    <span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+                    <span class="text-[10px] font-medium">購物車</span>
+                </a>
+                <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                    href="會員中心.html">
+                    <span class="material-symbols-outlined text-[24px]">person</span>
+                    <span class="text-[10px] font-medium">會員</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>

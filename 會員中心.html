@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LUFF BAKEHOUSE 會員中心</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2930d", // Golden baked color
+                        "secondary": "#8a7960", // Muted brown text
+                        "background-light": "#fcfbf9", // Warm off-white
+                        "background-dark": "#221b10", // Dark coffee
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2d2418",
+                        "warm-gray": "#f5f3f0", // Very light beige for cards
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "2xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "soft": "0 10px 40px -10px rgba(0,0,0,0.05)",
+                        "card": "0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02)",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100 min-h-screen pb-24">
+    <header
+        class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md transition-colors duration-200">
+        <div class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-3">
+                <button
+                    class="flex items-center justify-center w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                    onclick="history.back()">
+                    <span class="material-symbols-outlined text-gray-900 dark:text-white"
+                        style="font-size: 24px;">arrow_back</span>
+                </button>
+                <h1 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">會員中心</h1>
+            </div>
+            <button
+                class="flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-surface-dark hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors shadow-sm">
+                <span class="material-symbols-outlined text-gray-600 dark:text-gray-300"
+                    style="font-size: 24px;">settings</span>
+            </button>
+        </div>
+    </header>
+    <main class="flex flex-col gap-6 px-6">
+        <section class="flex flex-col items-center pt-2">
+            <div class="relative mb-4 group cursor-pointer">
+                <div
+                    class="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-surface-dark shadow-soft">
+                    <img alt="Smiling woman enjoying pastry" class="w-full h-full object-cover"
+                        data-alt="Close up profile picture of a happy customer"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKTHmYWSYgeC8Xw5KsGU_UkV5XMem4a9Fxn80SGaNms9XgaHkY7peQ1aHPeRj2pup9sIancLS25vmLA53icw62oRwayarMX2WUdAFfFKKzCwwNxhH5_kNLzmMTH2T3vZAcD1xfdAJQtTkDJoJpmQxGJU89y5WryAZbpLXZw9yE1uYc4GukCZZ48Zzy1GbaAWu2R2F9PnLdgiVFI0LnLvC7RaaMoXxDhd7yPXLS2CV6bzb-2OxLGfmU2UEO7KLCINvdWpH43J1cbp1_" />
+                </div>
+                <div
+                    class="absolute bottom-0 right-0 bg-primary text-white rounded-full p-1 border-2 border-white dark:border-surface-dark flex items-center justify-center">
+                    <span class="material-symbols-outlined" style="font-size: 16px;">edit</span>
+                </div>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-1">早安，Luff Lover</h2>
+            <div class="flex items-center gap-2 bg-secondary/10 dark:bg-secondary/30 px-3 py-1 rounded-full">
+                <span class="material-symbols-outlined text-primary text-sm">workspace_premium</span>
+                <span class="text-secondary dark:text-gray-300 text-sm font-medium">金牌會員 | 累積消費 $12,500</span>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4">
+            <div
+                class="relative overflow-hidden bg-white dark:bg-surface-dark p-5 rounded-2xl shadow-card flex flex-col justify-between h-32 group">
+                <div
+                    class="absolute -right-4 -top-4 w-20 h-20 bg-primary/5 rounded-full blur-xl group-hover:bg-primary/10 transition-colors">
+                </div>
+                <div class="flex items-start justify-between">
+                    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">會員點數</span>
+                    <span class="material-symbols-outlined text-primary" style="font-size: 20px;">loyalty</span>
+                </div>
+                <div>
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">1,250</span>
+                    <span class="text-xs font-medium text-gray-400 ml-1">點</span>
+                </div>
+            </div>
+            <div
+                class="relative overflow-hidden bg-white dark:bg-surface-dark p-5 rounded-2xl shadow-card flex flex-col justify-between h-32 group">
+                <div
+                    class="absolute -right-4 -top-4 w-20 h-20 bg-green-500/5 rounded-full blur-xl group-hover:bg-green-500/10 transition-colors">
+                </div>
+                <div class="flex items-start justify-between">
+                    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">購物金餘額</span>
+                    <span class="material-symbols-outlined text-green-600"
+                        style="font-size: 20px;">account_balance_wallet</span>
+                </div>
+                <div>
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">$300</span>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white dark:bg-surface-dark rounded-2xl p-6 shadow-card">
+            <div class="grid grid-cols-4 gap-4">
+                <button class="flex flex-col items-center gap-2 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-warm-gray dark:bg-gray-800 flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300">
+                        <span
+                            class="material-symbols-outlined text-gray-700 dark:text-gray-200 group-hover:text-primary transition-colors"
+                            style="font-size: 24px;">confirmation_number</span>
+                    </div>
+                    <span class="text-xs font-medium text-gray-600 dark:text-gray-300">領取優惠</span>
+                </button>
+                <button class="flex flex-col items-center gap-2 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-warm-gray dark:bg-gray-800 flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300">
+                        <span
+                            class="material-symbols-outlined text-gray-700 dark:text-gray-200 group-hover:text-primary transition-colors"
+                            style="font-size: 24px;">qr_code_2</span>
+                    </div>
+                    <span class="text-xs font-medium text-gray-600 dark:text-gray-300">會員條碼</span>
+                </button>
+                <button class="flex flex-col items-center gap-2 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-warm-gray dark:bg-gray-800 flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300">
+                        <span
+                            class="material-symbols-outlined text-gray-700 dark:text-gray-200 group-hover:text-primary transition-colors"
+                            style="font-size: 24px;">favorite</span>
+                    </div>
+                    <span class="text-xs font-medium text-gray-600 dark:text-gray-300">我的收藏</span>
+                </button>
+                <button class="flex flex-col items-center gap-2 group">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-warm-gray dark:bg-gray-800 flex items-center justify-center group-hover:bg-primary/10 transition-colors duration-300">
+                        <span
+                            class="material-symbols-outlined text-gray-700 dark:text-gray-200 group-hover:text-primary transition-colors"
+                            style="font-size: 24px;">history</span>
+                    </div>
+                    <span class="text-xs font-medium text-gray-600 dark:text-gray-300">瀏覽紀錄</span>
+                </button>
+            </div>
+        </section>
+        <section class="relative w-full h-40 rounded-2xl overflow-hidden shadow-card group cursor-pointer">
+            <img alt="Freshly baked strawberry croissant on a wooden table"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="Artistic shot of pastries with strawberries and powdered sugar"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN1SASkp3_KVE_Rg2XakNbEWjeK_jrWXdBeFmIUyGYDI0EYD-9klzMTA8vOHolxiXD58z2UsijB8lZXXWU0bULUMKQJ4MRoLyAk2rBiIgBnSiE0TN1MmfA5H2mfNnpjiOHmdrVpwKVtFPr_ImUBU2ouhhZLBHdtSycEW46R5cCBqUdEwgK6puBOp5a_oJJwuw06TLzQnU6GWMYg1NcBBYmpG0d7gs7jhtkPCJZcsg782syDSIkHxtNS6I0_j7w0b0Wo85W3cuPH_dB" />
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex flex-col justify-center px-6">
+                <span class="text-white/90 text-xs font-bold uppercase tracking-wider mb-1">新品上市</span>
+                <h3 class="text-white text-xl font-bold leading-tight mb-2">草莓可頌季<br />現正預購中</h3>
+                <div class="flex items-center text-white/90 text-sm font-medium">
+                    前往逛逛 <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col gap-3">
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white px-1">我的訂單</h3>
+            <div class="bg-white dark:bg-surface-dark p-4 rounded-2xl shadow-card flex gap-4 items-center">
+                <div class="w-16 h-16 rounded-xl bg-gray-100 dark:bg-gray-800 overflow-hidden shrink-0">
+                    <img alt="Box of assorted breads" class="w-full h-full object-cover"
+                        data-alt="Top view of a delivery box filled with breads"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsOAaRCeXKs3gXrGU47afS5V0IxLt7-i6wN2FBxqN6wEt5yzj7IDWnnT9rh9WJO-hze5cx0Fc5GnbcpdSym9KLbfFLGI3vxypc58IRS6_t5jSDAEm-NpnDKOJK8ObiQmqh3hoea3IxP_nNKaMmLncCMQyvyMHPM-KqZZ7Sypng00Zqi0FRh_2xmmErSCz3TI241OMKjw1hAdSMli_AZrsCdNrOMumi-N_HmPpRz7nqSyEJzoGbEFCAPUOki1DzyKlL8SyLN4-17mLH" />
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex justify-between items-start mb-1">
+                        <h4 class="font-bold text-gray-900 dark:text-white truncate">訂單 #2023102501</h4>
+                        <span class="text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">配送中</span>
+                    </div>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 truncate">法式長棍, 可麗露 (6入禮盒)...</p>
+                </div>
+                <span class="material-symbols-outlined text-gray-400">chevron_right</span>
+            </div>
+            <div
+                class="bg-white dark:bg-surface-dark rounded-2xl shadow-card mt-2 divide-y divide-gray-100 dark:divide-gray-800">
+                <a class="flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
+                    href="#">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-gray-500">receipt_long</span>
+                        <span class="text-gray-700 dark:text-gray-200 font-medium">查看全部訂單</span>
+                    </div>
+                    <span class="material-symbols-outlined text-gray-400">chevron_right</span>
+                </a>
+                <a class="flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
+                    href="#">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-gray-500">manage_accounts</span>
+                        <span class="text-gray-700 dark:text-gray-200 font-medium">帳戶設定</span>
+                    </div>
+                    <span class="material-symbols-outlined text-gray-400">chevron_right</span>
+                </a>
+                <a class="flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
+                    href="#">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-gray-500">support_agent</span>
+                        <span class="text-gray-700 dark:text-gray-200 font-medium">聯絡客服</span>
+                    </div>
+                    <span class="material-symbols-outlined text-gray-400">chevron_right</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <nav
+        class="fixed bottom-0 left-0 z-50 w-full border-t border-black/5 bg-white pb-6 pt-3 dark:border-white/5 dark:bg-background-dark">
+        <div class="flex items-center justify-around px-2">
+            <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                href="index.html">
+                <span class="material-symbols-outlined text-[24px]">home</span>
+                <span class="text-[10px] font-medium">首頁</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                href="泡芙系列.html">
+                <span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+                <span class="text-[10px] font-medium">商品</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+                href="購物車.html">
+                <span class="material-symbols-outlined text-[24px]">shopping_cart</span>
+                <span class="text-[10px] font-medium">購物車</span>
+            </a>
+            <a class="flex flex-col items-center gap-1 p-2 text-primary" href="會員中心.html">
+                <span class="material-symbols-outlined fill-current text-[24px]"
+                    style="font-variation-settings: 'FILL' 1;">person</span>
+                <span class="text-[10px] font-medium">會員</span>
+            </a>
+        </div>
+    </nav>
+
+</body>
+
+</html>

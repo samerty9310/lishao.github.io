@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-TW">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>購物車 - 旅禾烘焙 LUFF BAKEHOUSE</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f2930d",
+            "primary-dark": "#d67e00",
+            "background-light": "#f8f7f5", // Warm off-white
+            "background-dark": "#221b10",
+            "text-main": "#4a4238", // Warm dark brown
+            "text-secondary": "#8c8070", // Muted warm gray
+            "surface-white": "#ffffff",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans TC", "sans-serif"],
+            "body": ["Noto Sans TC", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            "soft": "0 4px 20px -2px rgba(242, 147, 13, 0.08)",
+            "float": "0 10px 40px -10px rgba(0,0,0,0.08)"
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light text-text-main font-display antialiased pb-52">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-background-light/95 backdrop-blur-sm transition-all duration-300">
+    <div class="flex items-center justify-between px-4 pt-12 pb-4">
+      <button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-black/5 transition-colors"
+        onclick="history.back()">
+        <span class="material-symbols-outlined text-text-main">arrow_back</span>
+      </button>
+      <h1 class="text-lg font-bold tracking-wide text-text-main">購物車</h1>
+      <button class="flex items-center justify-center h-10 px-2 rounded-full hover:bg-black/5 transition-colors">
+        <span class="text-text-secondary text-sm font-medium">編輯</span>
+      </button>
+    </div>
+  </header>
+  <div class="h-28"></div>
+  <div class="px-4 mb-6">
+    <div class="flex items-center justify-center bg-[#eae6df] p-1 rounded-full">
+      <div
+        class="flex-1 flex items-center justify-center py-2 px-3 rounded-full bg-white shadow-sm transition-all duration-300">
+        <span class="text-xs font-bold text-text-main tracking-wide">1. 購物車</span>
+      </div>
+      <div class="flex-1 flex items-center justify-center py-2 px-3 rounded-full">
+        <span class="text-xs font-medium text-text-secondary tracking-wide">2. 填寫資料</span>
+      </div>
+      <div class="flex-1 flex items-center justify-center py-2 px-3 rounded-full">
+        <span class="text-xs font-medium text-text-secondary tracking-wide">3. 完成</span>
+      </div>
+    </div>
+  </div>
+  <main class="flex flex-col gap-4 px-4">
+    <div
+      class="group relative flex gap-4 bg-white p-4 rounded-[1.5rem] shadow-sm border border-transparent hover:border-primary/20 transition-all duration-300">
+      <button class="absolute top-3 right-3 text-gray-300 hover:text-red-400 transition-colors p-1">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+      <div class="relative shrink-0 w-[88px] h-[88px] rounded-[1rem] overflow-hidden bg-gray-100">
+        <div aria-label="金黃酥脆的招牌泡芙" class="w-full h-full bg-cover bg-center" data-alt="金黃酥脆的招牌泡芙" role="img"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmOYPxZOOJcRvDwkhb98081HhgC4OoQvTXJlr_WsSixEf6kXRLJlZm0tEf08DeK_TpuelfHYT5Qrtxd-y6AX094JvGCiJPAy4HlcuyNUGBogsQsrMm9ijSokOIID21D1aLo67BuqPEU1AwFoxN2f5lJ3CN1B3CwFmbYc-zkt_zax9klgXHo6AY7aFoRN1ZKDAGR_EkfxCOciRHEZrl9oE7KaTU9HZVMlzOcfgNuGWohfYXwcMdhd4ZKAIicVqvvM9E0T1KDNYzSp0_');">
+        </div>
+      </div>
+      <div class="flex flex-col flex-1 justify-between py-0.5">
+        <div>
+          <h3 class="text-base font-bold text-text-main leading-tight mb-1">招牌泡芙</h3>
+          <p class="text-xs text-text-secondary leading-normal">口味：原味卡士達 | 1盒 (6入)</p>
+        </div>
+        <div class="flex items-end justify-between mt-2">
+          <span class="text-primary font-bold text-lg">$350</span>
+          <div class="flex items-center bg-background-light rounded-full p-1 h-8">
+            <button
+              class="w-7 h-full flex items-center justify-center text-text-secondary hover:text-text-main active:scale-90 transition-transform">
+              <span class="material-symbols-outlined text-[16px]">remove</span>
+            </button>
+            <span class="w-6 text-center text-sm font-semibold text-text-main">1</span>
+            <button
+              class="w-7 h-full flex items-center justify-center text-text-secondary hover:text-text-main active:scale-90 transition-transform">
+              <span class="material-symbols-outlined text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="group relative flex gap-4 bg-white p-4 rounded-[1.5rem] shadow-sm border border-transparent hover:border-primary/20 transition-all duration-300">
+      <button class="absolute top-3 right-3 text-gray-300 hover:text-red-400 transition-colors p-1">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+      <div class="relative shrink-0 w-[88px] h-[88px] rounded-[1rem] overflow-hidden bg-gray-100">
+        <div aria-label="北海道生乳泡芙" class="w-full h-full bg-cover bg-center" data-alt="北海道生乳泡芙" role="img"
+          style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBiF9rcolZ4fBDYg9U9be9wQMfO7dElv_Z-U4WZAwFjO-1-c2PdmPmmKy1FjHMrzIoyk8hup-sg8M3E_bjIMI54QxA0QCWiDSspcBt0Ci4ru40Nr_-GApULatAUn6wyoVfUGXeVJ3GtPUT-TE1N4hOqAy0Agk5vJjoxlub2GNijyl5ssiyRfEdW1mQKQNnmbkFXZaflmnFrdxzLmTM-gsh0QBvf9KGVAYvPbZjPSP2fy4G3OIBK6r_1moRIROgdKEgeJXk2bODWxUY');">
+        </div>
+      </div>
+      <div class="flex flex-col flex-1 justify-between py-0.5">
+        <div>
+          <h3 class="text-base font-bold text-text-main leading-tight mb-1">北海道生乳泡芙</h3>
+          <p class="text-xs text-text-secondary leading-normal">口味：北海道鮮奶 | 3入</p>
+        </div>
+        <div class="flex items-end justify-between mt-2">
+          <span class="text-primary font-bold text-lg">$195</span>
+          <div class="flex items-center bg-background-light rounded-full p-1 h-8">
+            <button
+              class="w-7 h-full flex items-center justify-center text-text-secondary hover:text-text-main active:scale-90 transition-transform">
+              <span class="material-symbols-outlined text-[16px]">remove</span>
+            </button>
+            <span class="w-6 text-center text-sm font-semibold text-text-main">3</span>
+            <button
+              class="w-7 h-full flex items-center justify-center text-text-secondary hover:text-text-main active:scale-90 transition-transform">
+              <span class="material-symbols-outlined text-[16px]">add</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="mt-8 mb-4">
+    <div class="px-4 mb-3 flex items-center justify-between">
+      <h2 class="text-base font-bold text-text-main">加購推薦</h2>
+      <button class="text-xs text-primary font-medium">查看更多</button>
+    </div>
+    <div class="flex gap-3 overflow-x-auto px-4 pb-4 scrollbar-hide snap-x">
+      <div class="snap-start shrink-0 w-36 bg-white p-3 rounded-[1.25rem] shadow-sm flex flex-col items-center">
+        <div class="w-24 h-24 rounded-xl bg-gray-100 mb-2 overflow-hidden">
+          <div aria-label="草莓蛋糕切片" class="w-full h-full bg-cover bg-center" data-alt="草莓蛋糕切片" role="img"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAB4vt-zSfe3SYE6MGmzSmlqsN-vpbjcvF4MiWJM08LkVkKQsubaI2uZsnIOEQewtGKMcVE_iSL36qhDfSZRnYyPF1WeOdsedtURzxu2eNtE6c63xrQopeo_19wTwqAD2DMBHWh8V_yFe_0LLgTO5YPIozmjqxCx0jULdLLP7a6qstOJdTsBoBONRF6BAZU6iGqyagIOcr5cw_4vI9mX_Ilo8T6EZtNlFgWn66cg9sBV4P6hRsKnAOMBlHN6TiCHpXy5RqrmZgKj4MZ');">
+          </div>
+        </div>
+        <h4 class="text-sm font-bold text-text-main w-full truncate text-center">草莓蛋糕切片</h4>
+        <p class="text-xs text-text-secondary mb-2">$160</p>
+        <button
+          class="w-full py-1.5 rounded-full bg-background-light text-primary text-xs font-bold hover:bg-primary hover:text-white transition-colors">
+          加入 +
+        </button>
+      </div>
+      <div class="snap-start shrink-0 w-36 bg-white p-3 rounded-[1.25rem] shadow-sm flex flex-col items-center">
+        <div class="w-24 h-24 rounded-xl bg-gray-100 mb-2 overflow-hidden">
+          <div aria-label="手工酸種麵包" class="w-full h-full bg-cover bg-center" data-alt="手工酸種麵包" role="img"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCaLL6glUOzwqnTkGwJomADD1f6kU9HzIg9RH1JoU8vvrUBe3SZ52pqLZKyBT03eTXLZLBWDhJjvHui9VmTgGdLC7T5ppF-u1l1N0VMkXD0HHHSwRBroWEQx1Ej16lgJDKTvctod5H3wbRaOO9ydngAgS4DpYfd3ngDo8OOckyuyTVouipKSpaAqIk5B2wM_RPjSH-0HaoSPxNVS4DojnsQE8872-eZITIOBljt5T5surwqaWU6MIRU5czzXD_2NnEMhRQH2-UQcZPS');">
+          </div>
+        </div>
+        <h4 class="text-sm font-bold text-text-main w-full truncate text-center">酸種麵包</h4>
+        <p class="text-xs text-text-secondary mb-2">$180</p>
+        <button
+          class="w-full py-1.5 rounded-full bg-background-light text-primary text-xs font-bold hover:bg-primary hover:text-white transition-colors">
+          加入 +
+        </button>
+      </div>
+      <div class="snap-start shrink-0 w-36 bg-white p-3 rounded-[1.25rem] shadow-sm flex flex-col items-center">
+        <div class="w-24 h-24 rounded-xl bg-gray-100 mb-2 overflow-hidden">
+          <div aria-label="法式可麗露" class="w-full h-full bg-cover bg-center" data-alt="法式可麗露" role="img"
+            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCRvQpiGhinnBMuQmgEN63kapKZ6lPYLmiUQr3qNRdKl5miry3P9WQbxpxG3abDTKsVG6ADfNfoLi2kR-CA4pB1lpaj-LmKbL9kBspoqEDwMls9AO7gmQDCeB35kF4LmTTMsvDKP1i293QhP1biUc7ef92pmtnOANK_007yz0sG2IrTefV7OXQh6WQaQ6KM0m_CT_vbhyFcKgE3l45jvZQ6ZJYTiwzJNDK91zsS623z92u3_0UG6MVpA89cv3T8--lF3fctPj6cjCQg');">
+          </div>
+        </div>
+        <h4 class="text-sm font-bold text-text-main w-full truncate text-center">可麗露</h4>
+        <p class="text-xs text-text-secondary mb-2">$85</p>
+        <button
+          class="w-full py-1.5 rounded-full bg-background-light text-primary text-xs font-bold hover:bg-primary hover:text-white transition-colors">
+          加入 +
+        </button>
+      </div>
+    </div>
+  </section>
+  <div
+    class="fixed bottom-[83px] left-0 right-0 bg-white/95 backdrop-blur-md border-t border-[#eae6df] shadow-float pb-2">
+    <div class="flex flex-col px-5 py-4 gap-4">
+      <div class="flex justify-between items-end">
+        <div class="text-xs text-text-secondary">
+          共 2 項商品
+        </div>
+        <div class="flex items-baseline gap-1">
+          <span class="text-sm font-medium text-text-secondary">總計金額</span>
+          <span class="text-2xl font-bold text-primary font-display">$470</span>
+        </div>
+      </div>
+      <button
+        class="w-full bg-primary hover:bg-primary-dark active:scale-[0.98] transition-all duration-200 text-white font-bold text-base py-4 rounded-full shadow-lg shadow-orange-200 flex items-center justify-center gap-2 group/btn"
+        onclick="location.href='結帳填寫資料.html'">
+        <span>前往結帳</span>
+        <span
+          class="material-symbols-outlined text-[20px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+      </button>
+    </div>
+    <div class="h-6 w-full"></div>
+  </div>
+
+  <nav
+    class="fixed bottom-0 left-0 z-50 w-full border-t border-black/5 bg-white pb-6 pt-3 dark:border-white/5 dark:bg-background-dark">
+    <div class="flex items-center justify-around px-2">
+      <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+        href="index.html">
+        <span class="material-symbols-outlined text-[24px]">home</span>
+        <span class="text-[10px] font-medium">首頁</span>
+      </a>
+      <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+        href="泡芙系列.html">
+        <span class="material-symbols-outlined text-[24px]">restaurant_menu</span>
+        <span class="text-[10px] font-medium">商品</span>
+      </a>
+      <a class="flex flex-col items-center gap-1 p-2 text-primary" href="購物車.html">
+        <span class="material-symbols-outlined fill-current text-[24px]"
+          style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+        <span class="text-[10px] font-medium">購物車</span>
+      </a>
+      <a class="flex flex-col items-center gap-1 p-2 text-text-secondary hover:text-text-primary transition-colors"
+        href="會員中心.html">
+        <span class="material-symbols-outlined text-[24px]">person</span>
+        <span class="text-[10px] font-medium">會員</span>
+      </a>
+    </div>
+  </nav>
+
+</body>
+
+</html>
